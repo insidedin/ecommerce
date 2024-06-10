@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- yang dalam meta kebutuhan seo pada web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mengkoneksikan css/external css melalui link-->
+    <link rel="stylesheet" href="assets/style.css" /> 
+    <!-- mengimport library awsome untuk icon pada class -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Course Commerce</title>
+</head>
+<body>
+  <!--  -->
+  <div class="chat fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+    <!-- semantik html (header,content,footer), memudahkan robot pada browser yang menampilkan konten web -->
+    <header> 
+        <!-- ul merupakan unordred list / memakai simbol | ada juga ol merupakan ordered list 1,2,3 dst-->
+        <ul class="nav-list"> 
+          <!-- format list -->
+          <li class="nav-item">
+            <!-- a atribut link, href peletakan link -->
+            <a href="#" class="nav-link"> 
+                <!-- span mengelompokkan tulisan dalam satu baris, sering digunakan untuk CSS-->
+                <span class="nav-icon fa fa-home"></span> 
+                <span class="nav-text">HOME</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">              
+                <span class="nav-icon fa-solid fa-tags"></span>
+                <span class="nav-text">PRODUCT</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <span class="nav-icon fa-solid fa-magnifying-glass"></span>
+                <span class="nav-text">CATEGORY</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <span class="nav-icon fa-solid fa-user"></span>
+                <span class="nav-text">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+    </header>
+    <br>
+
+    <main>
+      <!-- Selction Page Product List -->
+      <div class="container">
+        <h2 class="title">Product List</h2>
+        <!-- Row -->
+        <div class="row"> 
+          <!-- Column -->
+          <div class="col" onclick="buy('kaos praktek', 200000)">
+            <img src="assets/images/product-1.jpg"/>
+            <h4>Kaos Praktek</h4>
+            <p>Rp. 200.000</p>
+          </div>
+          <div class="col" onclick="buy('sepatu santai', 250000)">
+            <img src="assets/images/product-2.jpg"/>
+            <h4>Sepatu Santai</h4>
+            <p>Rp. 250.000</p>
+          </div>
+          <div class="col" onclick="buy('celana praktek', 400000)">
+            <img src="assets/images/product-3.jpg"/>
+            <h4>Celana Praktek</h4>
+            <p>Rp. 400.000</p>
+          </div>
+          <div class="col" onclick="buy('baju kuliah', 300000)">
+            <img src="assets/images/product-4.jpg"/>
+            <h4>Baju Kuliah</h4>
+            <p>Rp. 300.000</p>
+          </div>
+          <div class="col" onclick="buy('sepatu kuliah', 600000)">
+            <img src="assets/images/product-5.jpg"/>
+            <h4>Sepatu Kuliah</h4>
+            <p>Rp. 600.000</p>
+          </div>
+          <div class="col" onclick="buy('baju main', 350000)">
+            <img src="assets/images/product-6.jpg"/>
+            <h4>Baju Main</h4>
+            <p>Rp. 350.000</p>
+          </div> 
+          <div class="col" onclick="buy('kaos kaki', 50000)">
+            <img src="assets/images/product-7.jpg"/>
+            <h4>Kaos Kaki</h4>
+            <p>Rp. 50.000</p>
+          </div>
+          <div class="col" onclick="buy('jam hitam', 800000)">
+            <img src="assets/images/product-8.jpg"/>
+            <h4>Jam Hitam</h4>
+            <p>Rp. 800.000</p>
+          </div>
+          <div class="col" onclick="buy('jam kulit', 900000)">
+            <img src="assets/images/product-9.jpg"/>
+            <h4>Jam Kulit</h4>
+            <p>Rp. 900.000</p>
+          </div> 
+          <div class="col" onclick="buy('sepatu olahraga', 700000)">
+            <img src="assets/images/product-10.jpg"/>
+            <h4>Sepatu Olahraga</h4>
+            <p>Rp. 700.000</p>
+          </div>
+          <div class="col" onclick="buy('sepatu slip-on', 600000)">
+            <img src="assets/images/product-11.jpg"/>
+            <h4>Sepatu Slip-On</h4>
+            <p>Rp. 600.000</p>
+          </div>
+          <div class="col" onclick="buy('celana santai', 270000)">
+            <img src="assets/images/product-12.jpg"/>
+            <h4>Celana Santai</h4>
+            <p>Rp. 270.000</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright <span id="year"></span>. ProjectCommerce</p>
+    </footer>
+
+    <!-- mengkoneksikan javascript/external js melalui link-->
+    <script src="assets/source.js"></script>
+</body>
+</html>
